@@ -5,32 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="/lib/css/master.css" />
-	<script type="text/javascript">
-		WebFontConfig = {
-			google: { families: ['Quattrocento', 'Josefin+Sans'] },
-			fontinactive: function (fontFamily, fontDescription) {
-				WebFontConfig = {
-					custom: { families: ['Quattrocento', 'Josefin+Sans'],
-						urls: ['/lib/css/quattrocento/font.css', '/lib/css/josefin-sans/font.css']
-					}
-				};
-				loadFonts();
-			}
-		};
-
-	   function loadFonts() {
-			var wf = document.createElement('script');
-			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-		}
-
-		(function () {
-			loadFonts();
-		})();
+	<script>
+		function loadFonts(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";a.type="text/javascript";a.async="true";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}WebFontConfig={google:{families:["Quattrocento:400,700:latin","Josefin+Sans"]},fontinactive:function(a,b){WebFontConfig={custom:{families:["Quattrocento","Josefin+Sans"],urls:["/lib/css/quattrocento/font.css","/lib/css/josefin-sans/font.css"]}};loadFonts()}};(function(){loadFonts()})()
 	</script>
 </head>
 <body>
@@ -55,7 +31,8 @@
 					<li><a href="/code/mr/"><img src="/lib/img/home/mr-reporting.png" title="MR Reporting Wizard" /></a></li>
 					<li><a href="/code/jobbity/"><img src="/lib/img/home/jobbity.png" title="Jobbity" /></a></li>
 				</ul>
-				<p>Slashdot <a href="http://slashdot.org/story/06/08/18/2016230/The-Military-Aims-to-Develop-Smart-amp-Secure-WiFi" rel="external">picked up</a> my <a href="http://www.networkworld.com/news/2006/081606-intelligent-network.html" rel="external">article</a> on experimental networking a while back. More recently, I've <a href="http://www.bio-itworld.com/issues/2010/jan/DOT.html" rel="external">reported on</a> a drug discovery conference.</p>
+				<p>My <a href="http://sixrevisions.com/css/font-face-web-fonts-issues/">article on bulleproofing web fonts</a> was featured on the front page of <a href="https://twitter.com/hackernewsfp/status/123394868734214144">Hacker News</a> and the <a href="http://hacks.mozilla.org/2011/12/mozilla-hacks-weekly-december-8th-2011/">Mozilla Hacks Blog</a>. I've also spoken on web performance; <a href="words/faster/">slides</a> and <a href="http://www.youtube.com/watch?v=UlztNtjuc6g">video</a> are available.</p>
+
 				<p>If you need a hand with writing, design, or development work - or if you'd just like to chat - please feel free to <a href="/contact/">get in touch</a>.</p>
 		</div><!-- /.article -->
 	</div><!-- /.container -->
