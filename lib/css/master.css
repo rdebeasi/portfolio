@@ -1,0 +1,306 @@
+@media screen {
+
+	/* Basics */
+
+	body {
+		font: 1.1em 'Quattrocento', serif;
+		padding-top:15px;
+		margin:0;
+		background-color:#e2e2e2;
+		background-image: url('/lib/img/background.png');
+	}
+
+	img {
+		border: 0;
+	}
+
+	.position {
+		font-style: italic;
+	}
+
+	#container {
+		margin: 0 auto 0 auto;
+		max-width:1150px;
+		min-width:470px;
+		overflow:hidden;
+	}
+
+	a {
+		color:#0076b8;
+		text-decoration:none;
+		font-weight:700;
+	}
+	
+	a:hover {
+		color:#2096d8;
+	}
+
+	dt {
+		font-family: 'Josefin Sans', serif;
+		font-variant:small-caps;
+		font-size: 1.3em;
+		margin-top: 1em;
+		color:#808080;	
+		font-weight: 400;
+	}
+
+	dt:first-child {
+		margin-top: 0;
+	}
+
+	ul {
+		list-style-type:square;
+	}
+
+	/* Headings */
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight:400;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		margin: 0;
+	}
+
+	h2 {
+		color:#808080;	
+		font-variant:small-caps;
+	}
+
+	h4 {
+		color:#808080;	
+		font-variant:small-caps;
+	}
+
+	h6 {
+		color:#808080;	
+		font-variant:small-caps;
+	}
+
+	.nav h1 {
+		font-family: 'Quattrocento', serif;
+		font-size: 1.2em;
+		color:#808080;
+		font-variant:small-caps;
+		text-shadow: 0px 1px 0px #FFFFFF;
+		margin-bottom:1em;
+	}
+
+	.article {
+		width:60%;
+		float:left;
+		border:1px solid #CCC;
+		background-color:#FFFFFF;
+		-webkit-box-shadow: 0px 5px 8px #666;
+		-moz-box-shadow: 0px 5px 8px #666;
+		box-shadow: 0px 5px 8px #666;
+		padding:2.5%;
+		margin-left:5%;
+		margin-bottom: 2em;
+	}
+
+	/* Navigation and Logo */
+
+	.nav {
+		float:right;
+		width: 20%;
+		margin-right: 5%;
+	}
+	
+	.nav a {
+		display: block;
+	}
+
+	.nav ul
+	{
+		list-style-type: none;
+		padding:0;
+		margin:0;
+	}
+
+	.nav li
+	{
+		font-size:1.4em;
+	}
+
+	.nav li {
+		margin: 0 0 1em 0;
+		padding:0;
+		border-bottom: 2px solid #C1C1C1;
+	}
+
+	.nav li#home {
+		border: none;
+	}
+
+	.nav li#home a {
+		text-indent: -9999px;
+		background: url('../img/logo.png') no-repeat center top;
+		height: 80px;
+		width: 80px;
+		margin: 0 auto 1.5em auto;
+		display:block;
+	}
+
+	/* images & thumbnails */
+
+	ul.thumbs {
+		padding:0;
+		list-style-type:none;
+	}
+
+	ul.thumbs li {
+		float:left;
+		width:22%;
+		margin: 0 0 1em 4%;
+	}
+
+	ul.thumbs li:first-child {
+		margin-left:0;
+	}
+
+	ul.thumbs li img {
+		width:100%;
+	}
+
+	div.thumbs {
+		width:100%;
+	}
+
+	img.full {
+		width: 100%;
+		margin-top: .5em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* Mobile styles */
+	
+	body {
+		padding-top: 10px;
+	}
+	
+	.nav {
+		float: none;
+		width: auto;
+		margin: 0 auto;
+		padding: 0 2.5%;
+	}
+	
+	.nav li {
+		border-bottom: none;
+		margin: .78em .8em 0 0;
+		float: left;
+		font-size: .9em;
+	}
+	
+	.nav ul {
+		width: 100%;
+		margin-bottom: 10px; /* matches up with 10px padding top on body */
+	}
+	
+	.nav li#home a {
+		margin: 0;
+		width: 40px;
+		height: 40px;
+		background-image: url(../img/logo-sm.png);
+	}
+	
+	.nav li#home {
+		float: right;
+		margin: 0;
+	}
+	
+	/* Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
+	
+	/* For modern browsers */
+	.nav ul:before,
+	.nav ul:after {
+	    content:"";
+	    display:table;
+	}
+
+	.nav ul:after {
+	    clear:both;
+	}
+
+	/* For IE 6/7 (trigger hasLayout) */
+	.nav ul {
+	    zoom:1;
+	}
+	
+	#container {
+		min-width: 200px;
+	}
+	
+	.article {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		width: 90%;
+	}
+
+}
+
+@media only screen and (max-width: 480px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+
+	/* Target high-resolution displays */
+
+	.nav li#home a {
+		width: 40px;
+		height: 40px;
+		background-image: url(../img/logo.png);
+		-moz-background-size: 40px 40px;
+		-webkit-background-size: 40px 40px;
+		-o-background-size: 40px 40px;
+		moz-background-size: 40px 40px;
+	}
+	
+}
+
+@media print {
+	
+	body {
+		font-family: 'Quattrocento', serif;
+	}
+
+	.nav {
+		display:none;
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: 'Josefin Sans', serif;
+	}
+
+
+	/* thumbnails */
+
+	ul.thumbs {
+		padding:0;
+		list-style-type:none;
+		clear:right;
+	}
+
+	ul.thumbs li {
+		float:left;
+		width:22%;
+		margin-left: 4%;
+		margin-top: 0pt;
+		margin-bottom: 14pt;
+	}
+
+	ul.thumbs li:first-child {
+		margin-left:0;
+	}
+
+	ul.thumbs li img {
+		width:100%;
+	}
+
+	div.thumbs {
+		margin:auto;
+		width:100%;
+	}
+}

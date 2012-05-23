@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello! | Ryan DeBeasi</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/lib/css/master.css" />
+	<script>
+		function loadFonts(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";a.type="text/javascript";a.async="true";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}WebFontConfig={google:{families:["Quattrocento:400,700:latin","Josefin+Sans"]},fontinactive:function(a,b){WebFontConfig={custom:{families:["Quattrocento","Josefin+Sans"],urls:["/lib/css/quattrocento/font.css","/lib/css/josefin-sans/font.css"]}};loadFonts()}};(function(){loadFonts()})()
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div class="nav">
+			<ul>
+				<li id="home"><a href="/">Hello!</a></li>
+				<li><a href="/code/">Code</a></li>
+				<li><a href="/words/">Words</a></li>
+				<li><a href="/resume/">Resume</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div><!-- /.nav -->
+</body>
+</html>
+		<div class="article">
+			<h1>Hello!</h1>
+				<p>I'm Ryan DeBeasi, a web developer and freelance writer living just outside Atlanta, GA. I love concise language, elegant design, strong coffee, and jazz.</p>
+				<ul class="thumbs">
+					<li><a href="/code/clearing/"><img src="/lib/img/home/clearing.png" title="TinyMCE Clearing Plugin"/></a></li>
+					<li><a href="/code/pharmacology/"><img src="/lib/img/home/pharmacology.png" title="BUSM Pharmacology Website" /></a></li>
+					<li><a href="/code/mr/"><img src="/lib/img/home/mr-reporting.png" title="MR Reporting Wizard" /></a></li>
+					<li><a href="/code/jobbity/"><img src="/lib/img/home/jobbity.png" title="Jobbity" /></a></li>
+				</ul>
+				<p>Slashdot <a href="http://slashdot.org/story/06/08/18/2016230/The-Military-Aims-to-Develop-Smart-amp-Secure-WiFi" rel="external">picked up</a> my <a href="http://www.networkworld.com/news/2006/081606-intelligent-network.html" rel="external">article</a> on experimental networking a while back. More recently, I've <a href="http://www.bio-itworld.com/issues/2010/jan/DOT.html" rel="external">reported on</a> a drug discovery conference.</p>
+				<p>If you need a hand with writing, design, or development work - or if you'd just like to chat - please feel free to <a href="/contact/">get in touch</a>.</p>
+		</div><!-- /.article -->
+	</div><!-- /.container -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="/lib/js/scripts.js"></script>
+</body>
+</html>

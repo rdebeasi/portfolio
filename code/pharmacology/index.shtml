@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BUSM Pharmacology | Code | Ryan DeBeasi</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/lib/css/master.css" />
+	<script>
+		function loadFonts(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";a.type="text/javascript";a.async="true";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}WebFontConfig={google:{families:["Quattrocento:400,700:latin","Josefin+Sans"]},fontinactive:function(a,b){WebFontConfig={custom:{families:["Quattrocento","Josefin+Sans"],urls:["/lib/css/quattrocento/font.css","/lib/css/josefin-sans/font.css"]}};loadFonts()}};(function(){loadFonts()})()
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div class="nav">
+			<ul>
+				<li id="home"><a href="/">Hello!</a></li>
+				<li><a href="/code/">Code</a></li>
+				<li><a href="/words/">Words</a></li>
+				<li><a href="/resume/">Resume</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div><!-- /.nav -->
+		<div class="article">
+			<h1>BUSM Pharmacology</h1>
+			<img src="pharmacology.png" class="full" alt="A screenshot of the Pharmacology website." />
+			<h2>Content, meet Structure.</h2>
+			<p>The Department of Pharmacology and Experimental Therapeutics at Boston University School of Medicine came to BU's web team looking to revamp their existing WordPress site. They wanted highlight their unique programs and accomplished faculty - and they wanted to make it easy for prospective students to learn more.</p>
+			<p>Based on the client's input, I overhauled the site's navigation, and I worked with them to create new content. I also developed a WordPress theme, extending an existing theme framework to provide new features. The theme includes a template for listing faculty and staff, new "spotlight" widget areas, and a JavaScript slideshow. The theme allows the user to choose one of three different layouts, so I included code that placed the new widget areas in a location that was appropriate for the selected layout.</p>
+			<p>This project was a collaborative effort. I worked with BU's in-house design team to make sure that my changes kept with the BU look and feel, and I consulted with BU Photo Services to obtain photography that was related the subject matter of the site and fit within the design. Finally, I worked with student employees to improve markup and fix issues throughout the site.</p>
+			<p>I also advised the client on their social media strategy, discussing how they could use Twitter and Facebook to reach prospective students and setting up tools to send their site's news feed to their networks. Finally, I wrote documentation on updating the site and using the tools that we provided.</p>
+			<p><a href="http://www.bumc.bu.edu/busm-pm/" rel="external">Visit this site.</a></p>
+			<p><a href="/code/">Read about other projects I've worked on.</a>			
+		</div><!-- /.article -->
+	</div><!-- /.container -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="/lib/js/scripts.js"></script>
+</body>
+</html>

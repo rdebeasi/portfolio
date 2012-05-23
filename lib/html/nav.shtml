@@ -1,0 +1,9 @@
+		<div class="nav">
+			<ul>
+				<li id="home"><a href="/">Hello!</a></li>
+				<li><a href="/code/">Code</a></li>
+				<li><a href="/words/">Words</a></li>
+				<li><a href="/resume/">Resume</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div><!-- /.nav -->

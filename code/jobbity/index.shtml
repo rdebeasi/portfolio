@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobbity | Code | Ryan DeBeasi</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/lib/css/master.css" />
+	<script>
+		function loadFonts(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";a.type="text/javascript";a.async="true";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}WebFontConfig={google:{families:["Quattrocento:400,700:latin","Josefin+Sans"]},fontinactive:function(a,b){WebFontConfig={custom:{families:["Quattrocento","Josefin+Sans"],urls:["/lib/css/quattrocento/font.css","/lib/css/josefin-sans/font.css"]}};loadFonts()}};(function(){loadFonts()})()
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div class="nav">
+			<ul>
+				<li id="home"><a href="/">Hello!</a></li>
+				<li><a href="/code/">Code</a></li>
+				<li><a href="/words/">Words</a></li>
+				<li><a href="/resume/">Resume</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div><!-- /.nav -->
+		<div class="article">
+			<h1>Jobbity</h1>
+			<img src="jobbity.png" class="full" alt="A screenshot of a browser window, displaying the Jobbity website." />
+			<h2>Where it's Fun and Easy to Search for Jobs</h2>
+			<p>For my final project in a computer science course, I developed Jobbity, a job search website. Job seekers can browse and search jobs, submit applications, and see a list of positions to which they've applied. Employers can post jobs, delete old jobs, and view applications.</p>
+			<p>It was important that this PHP and MySQL-based site be easy to use &mdash;  but I also made sure that it was be secure, efficient, and easy to maintain.</p>
+			<p><a href="/code/">Read about other projects I've worked on.</a>			
+		</div><!-- /.article -->
+	</div><!-- /.container -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="/lib/js/scripts.js"></script>
+</body>
+</html>
