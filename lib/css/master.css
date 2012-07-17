@@ -12,6 +12,7 @@
 
 	img {
 		border: 0;
+		max-width: 100%;
 	}
 
 	.position {
@@ -165,17 +166,13 @@
 		margin-left:0;
 	}
 
-	ul.thumbs li img {
-		width:100%;
-	}
-
 	div.thumbs {
 		width:100%;
 	}
 
 	img.full {
-		width: 100%;
 		margin-top: .5em;
+		border: 1px solid #ccc;
 	}
 }
 
