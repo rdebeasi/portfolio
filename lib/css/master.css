@@ -208,9 +208,17 @@
 	
 	.nav li {
 		border-bottom: none;
-		margin: .78em .8em 0 0;
+		margin: .78em 0 0 .8em;
 		float: left;
 		font-size: .9em;
+	}
+
+	.nav li:first-child + li { /* The actual first child is the logo. */
+		margin-left: 0;
+	}
+
+	.nav a {
+		padding-top: 0;
 	}
 	
 	.nav ul {
