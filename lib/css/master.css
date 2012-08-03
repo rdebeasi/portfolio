@@ -30,6 +30,11 @@
 		color:#0076b8;
 		text-decoration:none;
 		font-weight:700;
+		-o-transition: color .2s;
+		-ms-transition: color .2s;
+		-moz-transition: color .2s;
+		-webkit-transition: color .2s;
+		transition: color .2s;
 	}
 	
 	a:hover {
@@ -116,6 +121,17 @@
 	
 	.nav a {
 		display: block;
+		padding-top: .25em;
+		text-indent: .25em;
+		-moz-transition: background-color .2s;
+		-webkit-transition: background-color .2s;
+		-o-transition: background-color .2s;
+		-ms-transition: background-color .2s;
+		transition: background-color .2s;
+	}
+
+	.nav a:hover {
+		background-color: rgba(0,0,0,.05);
 	}
 
 	.nav ul
@@ -131,7 +147,7 @@
 	}
 
 	.nav li {
-		margin: 0 0 1em 0;
+		margin: 0 0 .75em 0;
 		padding:0;
 		border-bottom: 2px solid #C1C1C1;
 	}
