@@ -190,6 +190,19 @@
 		margin-top: .5em;
 		border: 1px solid #ccc;
 	}
+
+	ul.thumbs a > img {
+		opacity: 1;
+		-o-transition: opacity .2s;
+		-ms-transition: opacity .2s;
+		-moz-transition: opacity .2s;
+		-webkit-transition: opacity .2s;
+		transition: opacity .2s;
+	}
+
+	ul.thumbs a:hover > img {
+		opacity: .8;
+	}
 }
 
 @media screen and (max-width: 480px) {
