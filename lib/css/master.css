@@ -38,7 +38,7 @@
 	}
 	
 	a:hover {
-		color:#2096d8;
+		color: #2096d8;
 	}
 
 	dt {
@@ -189,6 +189,10 @@
 	img.full {
 		margin-top: .5em;
 		border: 1px solid #ccc;
+	}
+
+	ul.thumbs a {
+		display: block;
 	}
 
 	ul.thumbs a > img {
