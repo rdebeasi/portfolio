@@ -6,8 +6,7 @@
 		font: 1.1em 'Quattrocento', serif;
 		padding-top:15px;
 		margin:0;
-		background-color:#e2e2e2;
-		background-image: url('/lib/img/background.png');
+		background:#e2e2e2 url('/lib/img/background.png');
 	}
 
 	img {
@@ -109,6 +108,12 @@
 		padding:2.5%;
 		margin-left:5%;
 		margin-bottom: 2em;
+	}
+
+	/* Google Font Web Font Loader */
+
+	.wf-loading {
+		visibility: hidden;
 	}
 
 	/* Navigation and Logo */
