@@ -108,6 +108,7 @@
 		padding:2.5%;
 		margin-left:5%;
 		margin-bottom: 2em;
+		line-height: 1.5;
 	}
 
 	/* Google Font Web Font Loader */
@@ -215,7 +216,7 @@
 }
 
 @media screen and (max-width: 480px) {
-	/* Mobile styles */
+	/* Small-screen styles */
 	
 	body {
 		padding-top: 10px;
