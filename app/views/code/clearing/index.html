@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TinyMCE Clearing Plugin | Code | Ryan DeBeasi</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/lib/css/master.css" />
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic|Quattrocento:400,700' rel='stylesheet' type='text/css'>
+	<link rel="apple-touch-icon" href="/touch-icon.png">
+	<script>
+		// Google Analytics
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-25663615-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div class="nav">
+			<ul>
+				<li id="home"><a href="/">Hello!</a></li>
+				<li><a href="/code/">Code</a></li>
+				<li><a href="/words/">Words</a></li>
+				<li><a href="/resume/">Resume</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div><!-- /.nav -->
+		<div class="article">
+			<h1>TinyMCE Clearing Plugin</h1>
+			<img src="clearing.png" class="full" alt="A screenshot of the TinyMCE formatting toolbar." />
+			<h2>A Simple Solution to a Common Problem</h2>
+			<p>At Boston University, users of our WordPress installation continually encountered problems with image alignment. WordPress let them float images to the left or right of text, but there was no easy way to clear that float and move on to a new line underneath the image. Our advice was to switch to the HTML editor and add inline CSS each time they wanted to do this. It worked, but we thought our clients should be able to focus on their content, not on messing with code.</p>
+			<p>To solve this problem, I developed a plugin for TinyMCE, the JavaScript-based visual editor that's used in WordPress. The plugin adds a button to the TinyMCE formatting toolbar. When users click the button, it inserts the code <code>&lt;br style="clear:both;" /&gt;</code>. Folks can use their backspace key to delete it, the same way they would delete any other new line.
+			<p>An inline style might not be what I'd choose if I were writing my own theme, but the advantage of this approach is that the plugin is not dependent on CSS that may or may not exist in a theme.</p>
+			<p>I ran my icon design past my coworkers, asking things like, "What do you think this button does?" I revised the icon and behavior based on their input. We noticed in testing that if you highlighted text and clicked the button, the text would disappear. In a sense, that's reasonable - if you highlight text and click the "insert symbol" button, the editor will replace your text with a symbol - but it's different from the way that formatting tools work. Is the button inserting something, or is it formatting something? It's kind of an open question.</p>
+			<p>To avoid confusion, I set the button to be disabled while text is selected and enabled only when no text is selected. This sort of behavior already occurs (in reverse) with the TinyMCE link button.</p>
+			<p>Now, instead of fighting with the visual editor and sending in support tickets, users can just click a button.</p>
+			<p><a href="/code/">Read about other projects I've worked on.</a></p>
+		</div><!-- /.article -->
+	</div><!-- /.container -->
+</body>
+</html>
