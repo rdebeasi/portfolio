@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://practical-bell-0528b1.netlify.com/* https://ryandebeasi.com/:splat 301!
