@@ -177,12 +177,12 @@
 		padding:0;
 		margin-bottom: 0;
 		list-style-type:none;
-		overflow: hidden; /* Clearfix */
+		clear:both;
 	}
 
 	/* Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */	
 	ul.thumbs:before,
-	ul.thumbs.nav ul:after {
+	ul.thumbs:after {
 	    content:"";
 	    display:table;
 	}
@@ -217,6 +217,12 @@
 
 	ul.thumbs a {
 		display: block;
+	}
+
+	.avatar {
+		max-width: 150px;
+		float: left;
+		margin-bottom: 10px;
 	}
 
 	ul.thumbs a > img {
@@ -309,9 +315,14 @@
 		margin-bottom: 1%;
 	}
 
+	.avatar {
+		max-width: 100px;
+	}
+
 	ul.thumbs li:nth-child(even) {
 		margin-left: 2%;
 	}
+}
 
 @media only screen and (max-width: 600px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 600px) and (min-device-pixel-ratio: 2) {
 
