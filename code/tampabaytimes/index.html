@@ -35,18 +35,15 @@
 			<h1>Tampa Bay Times</h1>
 			<img src="tbt.png" class="full" alt="Screenshots of the website running on various devices." />
 			<p>I led the front-end development of the new, responsive website for the Tampa Bay Times. Our team of developers, designers, editors, and digital strategitsts crafted a new experience that feels at home on any device with a web browser, but is also true to the paper's Pulitzer Prize-winning journalism and bold print design.</p>
-			<p>I built a CSS framework composed of a resuable modules that could be combined to make the pages throughout the site. The site uses a heavily customized version of the <a href="http://www.columnal.com/">Columnal</a> grid system. Columnal was one of a relatively small number of fluid grid systems available when I began working on the website in 2011. Columnal provides a 12-column grid that becomes a set of stacked 1-column elements on small devices. I added a third breakpoint for midsize devices such as tablets. At this point, the site is 8 columns wide. Each row is broken up into 4 double-width columns and 8 normal-width columns.</p>
-			<p>I also developed a suite of open source jQuery plugins for the site:</p>
+			<p>I built a CSS framework composed of a resuable modules that could be combined to make the pages throughout the site. The site uses a heavily customized version of the <a href="https://github.com/robertcedwards/Columnal">Columnal</a> grid system, one of a few of fluid grid systems available when I began working on the website in 2011.</p>
+			<p>I also developed open source jQuery plugins for the site:</p>
 			<ul>
-				<li><a href="/code/flexmenu/">FlexMenu</a> - Create navigation bars that adapt to the content and the space available</li>
-				<li><a href="https://github.com/352Media/flexText">FlexText</a> - Style text based on how it wraps</li>
-				<li><a href="https://github.com/352Media/flexToggle">FlexToggle</a> - Create drawers, expand/collapse boxes, and more with one line of JavaScript.</li>
+				<li><a href="https://github.com/352Media/flexMenu">FlexMenu</a> - Create navigation bars that adapt to the content and the space available</li>
 				<li><a href="https://github.com/rdebeasi/checked-polyfill">Checked Polyfill</a> - Use the :checked pseudo-class in IE7 and IE8.</li>
 			</ul>
-			<p>I loaded JavaScript with the YepNope resource loader, downloading only the files needed by a particular browser. For example, a visitor using Chrome won't have to download IE8 compatibility scripts. This approach also allowed to download JavaScript files in parallel with images and other assets. (Typically, JavaScript files at the top of the page will block the downloading of other assets until they are loaded.)</p>
-			<p>When we encountered problems, I designed new layout options on paper or in the browser, rapidly prototyping and testing various solutions. I worked closely with the design team. For example, the idea for FlexText came from a conversation with a designer who wanted to display headlines over photos without covering too much of them.</p>
-			<p>I delivered a set of front-end code for various pages on the site, and developers at the Tampa Bay Times integrated it into their content management system and added features such as carousels. I also answered developers' questions about responsive design and JavaScript. Some elements changed during the integration, but I think that we ultimately achieved a result that is elegant and future-proof. The reimagined Tampa Bay Times is true to the design while also being flexible enough to fit a variety of content on a panoply of devices.</p>
-			<p><a href="http://www.tampabaytimes.com/" rel="external">Visit the site</a></p>
+			<p>When we encountered problems, I designed new layout options on paper or in the browser, rapidly prototyping and testing various solutions. I worked closely with the design team.</p>
+			<p>I delivered a set of front-end code for various pages on the site, and developers at the Tampa Bay Times integrated it into their content management system and implemented additional features. I also answered developers' questions about responsive design and JavaScript.</p>
+			</p>The reimagined Tampa Bay Times is true to the paper's original print design while also adapting to a variety of devices.</p>
 
 			<p><a href="/code/">Read about other projects I've worked on.</a></p>
 		</div><!-- /.article -->
