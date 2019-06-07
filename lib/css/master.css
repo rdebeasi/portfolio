@@ -175,13 +175,31 @@
 
 	ul.thumbs {
 		padding:0;
+		margin-bottom: 0;
 		list-style-type:none;
+		overflow: hidden; /* Clearfix */
+	}
+
+	/* Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */	
+	ul.thumbs:before,
+	ul.thumbs.nav ul:after {
+	    content:"";
+	    display:table;
+	}
+
+	ul.thumbs:after {
+	    clear:both;
 	}
 
 	ul.thumbs li {
 		float:left;
 		width:22%;
-		margin: 0 0 1em 4%;
+		margin: 1% 0 1% 4%;
+	}
+
+	ul.thumbs img {
+		width: 100%;
+		height: auto;
 	}
 
 	ul.thumbs li:first-child {
@@ -215,7 +233,7 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 	/* Small-screen styles */
 	
 	body {
@@ -261,9 +279,6 @@
 		margin: 0;
 	}
 	
-	/* Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
-	
-	/* For modern browsers */
 	.nav ul:before,
 	.nav ul:after {
 	    content:"";
@@ -274,11 +289,6 @@
 	    clear:both;
 	}
 
-	/* For IE 6/7 (trigger hasLayout) */
-	.nav ul {
-	    zoom:1;
-	}
-	
 	#container {
 		min-width: 200px;
 	}
@@ -290,11 +300,22 @@
 		width: 90%;
 	}
 
-}
+	ul.thumbs li {
+		width: 49%;
+		margin: 1% 0 0 0;
+	}
 
-@media only screen and (max-width: 480px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+	ul.thumbs {
+		margin-bottom: 1%;
+	}
 
-	/* Target high-resolution displays */
+	ul.thumbs li:nth-child(even) {
+		margin-left: 2%;
+	}
+
+@media only screen and (max-width: 600px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 600px) and (min-device-pixel-ratio: 2) {
+
+	/* Target small, high-resolution displays */
 
 	.nav li#home a {
 		width: 40px;
