@@ -164,10 +164,12 @@
 
 	.nav li#home a {
 		text-indent: -9999px;
-		background: url('../img/logo.png') no-repeat center top;
+		background: url('../img/logo.svg') no-repeat center top;
 		height: 80px;
 		width: 80px;
+		background-size: 100% 100%;
 		margin: 0 auto 1.5em auto;
+		padding: 0;
 		display:block;
 	}
 
@@ -278,7 +280,6 @@
 		margin: 0;
 		width: 40px;
 		height: 40px;
-		background-image: url(../img/logo-sm.png);
 	}
 	
 	.nav li#home {
@@ -323,22 +324,6 @@
 	ul.thumbs li:nth-child(even) {
 		margin-left: 2%;
 	}
-}
-
-@media only screen and (max-width: 600px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 600px) and (min-device-pixel-ratio: 2) {
-
-	/* Target small, high-resolution displays */
-
-	.nav li#home a {
-		width: 40px;
-		height: 40px;
-		background-image: url(../img/logo.png);
-		-moz-background-size: 40px 40px;
-		-webkit-background-size: 40px 40px;
-		-o-background-size: 40px 40px;
-		moz-background-size: 40px 40px;
-	}
-	
 }
 
 @media print {
