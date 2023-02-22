@@ -1,1 +1,6 @@
-# portfolio
+# Portfolio
+
+## Getting started
+```
+npx serve .
+```
