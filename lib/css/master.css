@@ -380,3 +380,9 @@
 		width:100%;
 	}
 }
+
+/* Mastodon verification */
+
+.verification {
+	display: none;
+}
