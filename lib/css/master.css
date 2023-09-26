@@ -222,10 +222,14 @@
 	}
 
 	.avatar {
-		max-width: 150px;
+		max-width: 125px;
 		float: left;
 		margin-bottom: 10px;
-		margin-right: 5px;
+		margin-right: 10px;
+	}
+
+	.projectList {
+		clear: both;
 	}
 
 	ul.thumbs a > img {
