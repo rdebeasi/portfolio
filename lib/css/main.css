@@ -3,7 +3,9 @@
 	/* Basics */
 
 	body {
-		font: 1.1em 'Quattrocento', serif;
+		/* Didone stack from https://modernfontstacks.com/ */
+		font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+		font-size: 18px;
 		padding-top:15px;
 		margin:0;
 		background:#e2e2e2 url('/lib/img/background.png');
@@ -63,7 +65,9 @@
 	/* Headings */
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Josefin Sans', sans-serif;
+		/* Geometric Humanist stack from https://modernfontstacks.com/ */
+		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+font-weight: normal;
 		font-weight:400;
 	}
 
@@ -88,7 +92,6 @@
 	}
 
 	.nav h1 {
-		font-family: 'Quattrocento', serif;
 		font-size: 1.2em;
 		color:#808080;
 		font-variant:small-caps;
@@ -341,19 +344,9 @@
 }
 
 @media print {
-	
-	body {
-		font-family: 'Quattrocento', serif;
-	}
-
 	.nav {
 		display:none;
 	}
-
-	h1, h2, h3, h4, h5 {
-		font-family: 'Josefin Sans', serif;
-	}
-
 
 	/* thumbnails */
 
