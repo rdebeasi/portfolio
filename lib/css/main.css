@@ -3,7 +3,9 @@
 	/* Basics */
 
 	body {
-		font: 1.1em 'Quattrocento', serif;
+		/* Didone stack from https://modernfontstacks.com/ */
+		font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+		font-size: 18px;
 		padding-top:15px;
 		margin:0;
 		background:#e2e2e2 url('/lib/img/background.png');
@@ -40,11 +42,9 @@
 	}
 
 	dt {
-		font-family: 'Josefin Sans', serif;
-		font-variant:small-caps;
 		font-size: 1.3em;
 		margin: 1em 0 .25em 0;
-		color:#808080;	
+		color:#808080;
 		font-weight: 400;
 	}
 
@@ -62,8 +62,10 @@
 
 	/* Headings */
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Josefin Sans', sans-serif;
+	h1, h2, h3, h4, h5, h6,
+	dt {
+		/* Rounded Sans from https://modernfontstacks.com/ */
+		font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
 		font-weight:400;
 	}
 
@@ -74,26 +76,14 @@
 
 	h2 {
 		color:#808080;	
-		font-variant:small-caps;
 	}
 
 	h4 {
 		color:#808080;	
-		font-variant:small-caps;
 	}
 
 	h6 {
 		color:#808080;	
-		font-variant:small-caps;
-	}
-
-	.nav h1 {
-		font-family: 'Quattrocento', serif;
-		font-size: 1.2em;
-		color:#808080;
-		font-variant:small-caps;
-		text-shadow: 0px 1px 0px #FFFFFF;
-		margin-bottom:1em;
 	}
 
 	.article {
@@ -341,19 +331,9 @@
 }
 
 @media print {
-	
-	body {
-		font-family: 'Quattrocento', serif;
-	}
-
 	.nav {
 		display:none;
 	}
-
-	h1, h2, h3, h4, h5 {
-		font-family: 'Josefin Sans', serif;
-	}
-
 
 	/* thumbnails */
 
